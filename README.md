@@ -4,7 +4,7 @@
 
 ```bash
 # this is horrible and I'm sure there's a better way
-pip install sphinx-doc
+pip install -U sphinx
 pip install sphinx_rtd_theme
 
 # do this whenever you add to intropy
