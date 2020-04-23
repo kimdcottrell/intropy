@@ -12,7 +12,8 @@ sphinx-quickstart --ext-autodoc
 
 # do this whenever you add to intropy
 cd docs
-sphinx-apidoc -f -o source/ ../intropy
+cp ../*.md source/ # this prepares all your .md files to show up in sphinx's output
+sphinx-apidoc -f -o source/ ../intropy # this prepares all your .py files to show up in sphinx's outputcd .
 make clean && make html
 ```
 
@@ -21,3 +22,15 @@ make clean && make html
 ```bash
 open docs/build/html/index.html
 ```
+
+# But can we handle markdown?
+
+- that
+- is
+- a
+- *great*
+- question
+
+> time to find out
+
+she said.

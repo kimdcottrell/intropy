@@ -29,6 +29,7 @@ author = 'kcottrell'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
+    'recommonmark'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -54,3 +55,4 @@ html_static_path = ['_static']
 
 
 # -- Extension configuration -------------------------------------------------
+
