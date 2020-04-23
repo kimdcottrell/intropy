@@ -10,7 +10,7 @@ Welcome to intropy's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   README.md
+   README
    modules
 
 Indices and tables
