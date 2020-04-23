@@ -7,6 +7,9 @@
 pip install -U sphinx
 pip install sphinx_rtd_theme
 
+# you don't need to run this again, but for docu's sake, init cmd was: 
+sphinx-quickstart --ext-autodoc
+
 # do this whenever you add to intropy
 cd docs
 sphinx-apidoc -f -o source/ ../intropy
