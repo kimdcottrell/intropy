@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>intropy &mdash; intropy  documentation</title>
+  <title>Kim Gets Learnt 2020 &mdash; intropy  documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="dog module" href="dog.html" />
-    <link rel="prev" title="Kim Gets Learnt 2020" href="README.html" /> 
+    <link rel="next" title="intropy" href="modules.html" />
+    <link rel="prev" title="Welcome to intropy’s documentation!" href="index.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -82,14 +82,13 @@
             
               <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="README.html">Kim Gets Learnt 2020</a></li>
-<li class="toctree-l1"><a class="reference internal" href="README.html#but-can-we-handle-markdown">But can we handle markdown?</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">intropy</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="dog.html">dog module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="functions_and_files.html">functions_and_files module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="intro_to_functions.html">intro_to_functions module</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Kim Gets Learnt 2020</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#generating-docs">Generating docs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#viewing-the-docs">Viewing the docs</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#but-can-we-handle-markdown">But can we handle markdown?</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modules.html">intropy</a></li>
 </ul>
 
             
@@ -135,13 +134,13 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>intropy</li>
+      <li>Kim Gets Learnt 2020</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/modules.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/README.md.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -154,15 +153,46 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="intropy">
-<h1>intropy<a class="headerlink" href="#intropy" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="dog.html">dog module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="functions_and_files.html">functions_and_files module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intro_to_functions.html">intro_to_functions module</a></li>
-</ul>
+  <div class="section" id="kim-gets-learnt-2020">
+<h1>Kim Gets Learnt 2020<a class="headerlink" href="#kim-gets-learnt-2020" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="generating-docs">
+<h2>Generating docs<a class="headerlink" href="#generating-docs" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="c1"># this is horrible and I&#39;m sure there&#39;s a better way</span>
+pip install -U sphinx
+pip install sphinx_rtd_theme
+pip install sphinx-autodoc-annotation
+
+<span class="c1"># you don&#39;t need to run this again, but for docu&#39;s sake, init cmd was: </span>
+sphinx-quickstart --ext-autodoc
+
+<span class="c1"># do this whenever you add to intropy</span>
+<span class="nb">cd</span> docs
+cp ../*.md source/ <span class="c1"># this prepares all your .md files to show up in sphinx&#39;s output</span>
+sphinx-apidoc -f -o source/ ../intropy <span class="c1"># this prepares all your .py files to show up in sphinx&#39;s outputcd .</span>
+make clean <span class="o">&amp;&amp;</span> make html
+</pre></div>
 </div>
+</div>
+<div class="section" id="viewing-the-docs">
+<h2>Viewing the docs<a class="headerlink" href="#viewing-the-docs" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>open docs/build/html/index.html
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="but-can-we-handle-markdown">
+<h1>But can we handle markdown?<a class="headerlink" href="#but-can-we-handle-markdown" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>that</p></li>
+<li><p>is</p></li>
+<li><p>a</p></li>
+<li><p><em>great</em></p></li>
+<li><p>question</p></li>
+</ul>
+<blockquote>
+<div><p>time to find out</p>
+</div></blockquote>
+<p>she said.</p>
 </div>
 
 
@@ -173,10 +203,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="dog.html" class="btn btn-neutral float-right" title="dog module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="modules.html" class="btn btn-neutral float-right" title="intropy" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="README.html" class="btn btn-neutral float-left" title="Kim Gets Learnt 2020" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to intropy’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
