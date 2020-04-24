@@ -1,4 +1,5 @@
 import inspect
+from typing import Union
 
 
 def print_args(*args):
@@ -30,6 +31,17 @@ def public_func():
     _internal_func('hi!')
 
 
-def add(a, b):
-    print(f"ADDING: {a} + {b}")
-    return a + b
+def add(arg1: Union[int, float], arg2: Union[int, float]) -> Union[int, float]:
+    """Summary line. Google's format! :D
+
+    Extended description of function.
+
+    Args:
+        arg1: Description of arg1
+        arg2: Description of arg2
+
+    Returns:
+        Description of return value
+    """
+    print(f"ADDING: {arg1} + {arg2}")
+    return arg1 + arg2

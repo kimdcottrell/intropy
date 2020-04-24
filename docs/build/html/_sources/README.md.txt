@@ -6,6 +6,7 @@
 # this is horrible and I'm sure there's a better way
 pip install -U sphinx
 pip install sphinx_rtd_theme
+pip install sphinx-autodoc-annotation
 
 # you don't need to run this again, but for docu's sake, init cmd was: 
 sphinx-quickstart --ext-autodoc
@@ -21,15 +22,6 @@ make clean && make html
 
 ```bash
 open docs/build/html/index.html
-```
-
-## Pushing out changes to github pages
-
-```bash
-git checkout gh-pages
-git pull
-git merge master
-git subtree push --prefix html origin gh-pages
 ```
 
 # But can we handle markdown?

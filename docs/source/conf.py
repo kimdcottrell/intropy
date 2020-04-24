@@ -30,7 +30,8 @@ author = 'kcottrell'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.githubpages',
-    'recommonmark'
+    'recommonmark',
+    'sphinx.ext.napoleon'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -58,3 +59,4 @@ html_static_path = ['_static']
 # -- Extension configuration -------------------------------------------------
 source_suffix = ['.rst', '.md']
 master_doc = 'index'
+autodoc_typehints = 'signature'
