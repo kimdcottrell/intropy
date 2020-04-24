@@ -23,6 +23,15 @@ make clean && make html
 open docs/build/html/index.html
 ```
 
+## Pushing out changes to github pages
+
+```bash
+git checkout gh-pages
+git pull
+git merge master
+git subtree push --prefix html origin gh-pages
+```
+
 # But can we handle markdown?
 
 - that
