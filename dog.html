@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>intropy &mdash; intropy  documentation</title>
+  <title>dog module &mdash; intropy  documentation</title>
   
 
   
@@ -35,8 +35,8 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="dog module" href="dog.html" />
-    <link rel="prev" title="Kim Gets Learnt 2020" href="README.html" /> 
+    <link rel="next" title="functions_and_files module" href="functions_and_files.html" />
+    <link rel="prev" title="intropy" href="modules.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -84,8 +84,8 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="README.html">Kim Gets Learnt 2020</a></li>
 <li class="toctree-l1"><a class="reference internal" href="README.html#but-can-we-handle-markdown">But can we handle markdown?</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">intropy</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="dog.html">dog module</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">intropy</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">dog module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="functions_and_files.html">functions_and_files module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="intro_to_functions.html">intro_to_functions module</a></li>
 </ul>
@@ -135,13 +135,15 @@
     
       <li><a href="index.html">Docs</a> &raquo;</li>
         
-      <li>intropy</li>
+          <li><a href="modules.html">intropy</a> &raquo;</li>
+        
+      <li>dog module</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/modules.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/dog.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -154,15 +156,48 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="intropy">
-<h1>intropy<a class="headerlink" href="#intropy" title="Permalink to this headline">¶</a></h1>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="dog.html">dog module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="functions_and_files.html">functions_and_files module</a></li>
-<li class="toctree-l1"><a class="reference internal" href="intro_to_functions.html">intro_to_functions module</a></li>
-</ul>
-</div>
+  <div class="section" id="module-dog">
+<span id="dog-module"></span><h1>dog module<a class="headerlink" href="#module-dog" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="dog.Dog">
+<em class="property">class </em><code class="sig-prename descclassname">dog.</code><code class="sig-name descname">Dog</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">name</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#dog.Dog" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Business requires that we must have more puppers</p>
+<dl class="py method">
+<dt id="dog.Dog.add_owner">
+<code class="sig-name descname">add_owner</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">owner</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#dog.Dog.add_owner" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add in the optional owner.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>owner</strong> – description for owner</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="dog.Dog.add_trick">
+<code class="sig-name descname">add_trick</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">trick</span><span class="p">:</span> <span class="n">str</span></em><span class="sig-paren">)</span><a class="headerlink" href="#dog.Dog.add_trick" title="Permalink to this definition">¶</a></dt>
+<dd><p>Add as many tricks as you’d like.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>trick</strong> – description for trick</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt id="dog.Dog.description">
+<code class="sig-name descname">description</code><span class="sig-paren">(</span><span class="sig-paren">)</span> &#x2192; str<a class="headerlink" href="#dog.Dog.description" title="Permalink to this definition">¶</a></dt>
+<dd><p>Generate the overall description of the dog.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>description for return</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
 </div>
 
 
@@ -173,10 +208,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="dog.html" class="btn btn-neutral float-right" title="dog module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="functions_and_files.html" class="btn btn-neutral float-right" title="functions_and_files module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="README.html" class="btn btn-neutral float-left" title="Kim Gets Learnt 2020" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="modules.html" class="btn btn-neutral float-left" title="intropy" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
