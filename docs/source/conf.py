@@ -59,4 +59,4 @@ html_static_path = ['_static']
 # -- Extension configuration -------------------------------------------------
 source_suffix = ['.rst', '.md']
 master_doc = 'index'
-autodoc_typehints = 'signature'
+autodoc_typehints = 'description'

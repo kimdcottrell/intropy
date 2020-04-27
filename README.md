@@ -29,7 +29,7 @@ open docs/build/html/index.html
 git checkout gh-pages
 git pull
 git merge master
-git subtree push --prefix html origin gh-pages
+git subtree push --prefix docs/build/html origin gh-pages
 ```
 
 # But can we handle markdown?
