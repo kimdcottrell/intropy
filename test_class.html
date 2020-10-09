@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>functions_and_files module &mdash; intropy  documentation</title>
+  <title>test_class module &mdash; intropy  documentation</title>
   
 
   
@@ -35,8 +35,7 @@
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="intro_to_functions module" href="intro_to_functions.html" />
-    <link rel="prev" title="dog module" href="dog.html" /> 
+    <link rel="prev" title="intro_to_functions module" href="intro_to_functions.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
@@ -86,9 +85,9 @@
 <li class="toctree-l1"><a class="reference internal" href="README.html#but-can-we-handle-markdown">But can we handle markdown?</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="modules.html">intropy</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="dog.html">dog module</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">functions_and_files module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="functions_and_files.html">functions_and_files module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="intro_to_functions.html">intro_to_functions module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="test_class.html">test_class module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">test_class module</a></li>
 </ul>
 </li>
 </ul>
@@ -138,13 +137,13 @@
         
           <li><a href="modules.html">intropy</a> &raquo;</li>
         
-      <li>functions_and_files module</li>
+      <li>test_class module</li>
     
     
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/functions_and_files.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/test_class.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -157,22 +156,41 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="module-functions_and_files">
-<span id="functions-and-files-module"></span><h1>functions_and_files module<a class="headerlink" href="#module-functions_and_files" title="Permalink to this headline">¶</a></h1>
-<dl class="py function">
-<dt id="functions_and_files.print_a_line">
-<code class="sig-prename descclassname">functions_and_files.</code><code class="sig-name descname">print_a_line</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">line_number</span></em>, <em class="sig-param"><span class="n">f</span></em><span class="sig-paren">)</span><a class="headerlink" href="#functions_and_files.print_a_line" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+  <div class="section" id="module-test_class">
+<span id="test-class-module"></span><h1>test_class module<a class="headerlink" href="#module-test_class" title="Permalink to this headline">¶</a></h1>
+<dl class="py class">
+<dt id="test_class.TestClass">
+<em class="property">class </em><code class="sig-prename descclassname">test_class.</code><code class="sig-name descname">TestClass</code><a class="headerlink" href="#test_class.TestClass" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt id="test_class.TestClass.class_method">
+<em class="property">classmethod </em><code class="sig-name descname">class_method</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_class.TestClass.class_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>flagged with the &#64;classmethod decorator</p>
+<p>this cannot change a singular instance of a class.</p>
+<p>it is used to change something for EVERY instance
+of a class</p>
+</dd></dl>
 
-<dl class="py function">
-<dt id="functions_and_files.print_all">
-<code class="sig-prename descclassname">functions_and_files.</code><code class="sig-name descname">print_all</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em><span class="sig-paren">)</span><a class="headerlink" href="#functions_and_files.print_all" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dl class="py method">
+<dt id="test_class.TestClass.method">
+<code class="sig-name descname">method</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_class.TestClass.method" title="Permalink to this definition">¶</a></dt>
+<dd><p>through the self parameter, instance methods
+can freely access attributes and methods of the
+same object.</p>
+<p>instance methods come in handy when modifying an
+object’s state, as well as the class state via
+the self.__class__ attribute</p>
+</dd></dl>
 
-<dl class="py function">
-<dt id="functions_and_files.rewind">
-<code class="sig-prename descclassname">functions_and_files.</code><code class="sig-name descname">rewind</code><span class="sig-paren">(</span><em class="sig-param"><span class="n">f</span></em><span class="sig-paren">)</span><a class="headerlink" href="#functions_and_files.rewind" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dl class="py method">
+<dt id="test_class.TestClass.static_method">
+<em class="property">static </em><code class="sig-name descname">static_method</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_class.TestClass.static_method" title="Permalink to this definition">¶</a></dt>
+<dd><p>this cannot modify an object’s state nor class state.</p>
+<p>these functions are restricted in what they can access.
+they’re primarily used to namespace your methods.</p>
+</dd></dl>
+
+</dd></dl>
 
 </div>
 
@@ -184,10 +202,8 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="intro_to_functions.html" class="btn btn-neutral float-right" title="intro_to_functions module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
-      
-        <a href="dog.html" class="btn btn-neutral float-left" title="dog module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="intro_to_functions.html" class="btn btn-neutral float-left" title="intro_to_functions module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

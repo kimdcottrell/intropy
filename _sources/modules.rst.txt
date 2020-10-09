@@ -7,3 +7,4 @@ intropy
    dog
    functions_and_files
    intro_to_functions
+   test_class
